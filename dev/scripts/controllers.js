@@ -113,9 +113,13 @@ angular.module('tradowApp').controller('AppCtrl', ['$rootScope', '$location', 'U
             $("#"+key).after($("#selectedPlan"));
         }
     }])
-    .controller('PlanCtrl', ['$rootScope', 'PlanDetailsService', 'LoadService', function($rootScope, PlanDetailsService, LoadService) {
-        var planServ, self = this;
+    .controller('PlanCtrl', ['$rootScope', 'PlanDetailsService', 'LoadService', 'UserDetailsService', function($rootScope, PlanDetailsService, LoadService, UserDetailsService) {
+        var planServ, userServ, self = this;
         planServ = PlanDetailsService;
+        userServ = UserDetailsService;
+        self.userSearchKey = "";
+        self.selectedPlanKey = "";
+        self.users = userServ.getUsersList;
         LoadService.loadFile("db/shadowList.json").then(function(planData) {
             planServ.set(planData.data.SHADOWS);
             self.plans = planServ.get();
@@ -197,6 +201,31 @@ angular.module('tradowApp').controller('AppCtrl', ['$rootScope', '$location', 'U
         self.fnChangeSaveState = function(){
             self.selectedPlan.notSaved = true;
         }
+
+        self.fnShowUserPanel = function($event, key){
+            $event.stopPropagation();
+            self.selectedPlanKey = key;
+            $("#plan_"+key).after($("#userSearchList"));
+            self.fnSearchUser();
+        }
+
+        self.fnSearchUser = function (){
+            userServ.findUsers(self.userSearchKey, self.selectedPlanKey)
+        }
+
+        self.fnAssignToUser = function($event, key, value){
+            $event.stopPropagation();
+            if(value.PROJ_TAKEN.toLowerCase() == "yes"){
+                var assignFlag = confirm("The project "+self.selectedPlanKey+" has already been assigned to " + key +". Do you want to assign it as a new project again?");
+                if(!assignFlag)
+                    return;
+            }
+            alert("Send info to DB for user: " + key +" and Project : " + self.selectedPlanKey)
+
+            value.ASSIGNED = true;
+            console.log(value);
+        }
+
     }]);
 
 /*.controller('LandingCtrl', ['StockService', function (StockService) {

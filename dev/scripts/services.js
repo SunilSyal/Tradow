@@ -43,7 +43,8 @@ angular.module('tradowApp')
             update: function(key) {
                 alert('Saved successfully.' + key)
             },
-            findUsers: function(key) {
+            findUsers: function(searchKey, projectID) {
+                //A parameter (project ID) will be paseed in case we are looking for users for selected project.
                 LoadService.loadFile("db/users.json").then(function(res) {
                     userObj = res.data.USERS;
                 }, function(err) {

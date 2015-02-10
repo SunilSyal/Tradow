@@ -47,10 +47,10 @@
                 <div>{{value.MENTORS}}</div>
                 <div>{{value.MANAGER}}</div>
                 <input type="checkbox" name="projProgress" ng-checked="Number(value.PROJSTATUS)" ng-click="userCtrl.fnInvertProjectStatus(value)">
-                <label for="projProgress">{{userCtrl.projectStatus(value.PROJSTATUS)}}</label>
+                
             </li>
         </div>
-        <button ng-click="userCtrl.fnAddItem()">Assign a Shadow/Training</button>
+        
     </div>
 
     <div ng-show="userCtrl.editUserFlag" id="editedUser">
@@ -74,8 +74,8 @@
                 <input disabled type="text" ng-model="item.TITLE">
                 <textarea disabled rows="2" columns="5" ng-model="item.DESC"></textarea>
                 <input type="checkbox" name="taskProgress" ng-checked="userCtrl.selectedProjDetails[userCtrl.selectedUserProjKey].PROGRESS[$index]" ng-click="userCtrl.fnInvertTaskStatus($index)">
+                <textarea ng-change="userCtrl.fnChangeSaveState()" rows="2" columns="5" ng-model="userCtrl.selectedProjDetails[userCtrl.selectedUserProjKey].COMMENTS[$index]"></textarea>
             </li>
         </div>
     </div>
-
 </div>
