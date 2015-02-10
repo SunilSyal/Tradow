@@ -1,0 +1,10 @@
+{
+	"USERS":{
+		"USER_108899" : {"NAME":"Promil", "EXP":0.6, "SKILLS":"JS, HTML, CSS", "TYPE":"M"},
+		"USER_108345" : {"NAME":"Ajay", "EXP":2.6, "SKILLS":"JS, HTML, CSS", "TYPE":"A"},
+		"USER_133499" : {"NAME":"Rahul", "EXP":3, "SKILLS":"JS, HTML, CSS", "TYPE":"T"}
+	}
+}
+
+
+ 

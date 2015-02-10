@@ -1,0 +1,64 @@
+{
+    "SHADOWS": {
+        "SHADOW_101": {
+            "INFO": {
+                "TITLE": "JS-Intermediate",
+                "TYPE": "Shadow",
+                "DESC": "JS, HTML, CSS"
+            },
+            "ITEMS": [{
+                "TITLE": "1",
+                "DESC": "1"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }]
+        }, 
+        "SHADOW_104": {
+            "INFO": {
+                "TITLE": "JS-Advanced",
+                "TYPE": "Shadow",
+                "DESC": "JS, HTML, CSS"
+            },
+            "ITEMS": [{
+                "TITLE": "2222",
+                "DESC": "22222"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }]
+        }, 
+        "SHADOW_103": {
+            "INFO": {
+                "TITLE": "JS/HTML/CSS",
+                "TYPE": "Training",
+                "DESC": "JS, HTML, CSS"
+            },
+            "ITEMS": [{
+                "TITLE": "33333333333",
+                "DESC": "3333333333"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }, {
+                "TITLE": "tile goes here",
+                "DESC": "desc goes here"
+            }]
+        }
+    }
+}

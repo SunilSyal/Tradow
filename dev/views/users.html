@@ -1,0 +1,81 @@
+<div class="userView">
+
+
+    <form name="searchUserForm" ng-submit="userCtrl.fnSearchUser()">
+        <input ng-model="userCtrl.userSearchKey" placeholder="Search..." required>
+        <button>Search User</button>
+    </form>
+
+    <button ng-click="userCtrl.fnCreateUser()" class="addUser">Add User</button>
+
+    <form name="newUserForm" class="newUser listHeading" ng-submit="userCtrl.fnSaveUser($event)">
+        <input ng-model="userCtrl.newUserObj.ID" placeholder="ID" required>
+        <input ng-model="userCtrl.newUserObj.NAME" placeholder="Name" required>
+        <input ng-model="userCtrl.newUserObj.EXP" placeholder="Exp" required>
+        <input ng-model="userCtrl.newUserObj.SKILLS" placeholder="Skills" required>
+        <button>Save</button>
+    </form>
+
+    <ul class="userList">
+        <li class="listHeading">
+            <div>ID</div>
+            <div>NAME</div>
+            <div>EXP</div>
+            <div>SKILLS</div>
+        </li>
+        <li ng-attr-id="{{ key }}" ng-repeat="(key, value) in userCtrl.users()" ng-click="userCtrl.fnShowUserDetails(key)">
+            <div>{{key}}</div>
+            <div>{{value.NAME}}</div>
+            <div>{{value.EXP}}</div>
+            <div>{{value.SKILLS}}</div>
+            <button ng-click="userCtrl.fnEditUser($event, key)">Edit</button>
+        </li>
+    </ul>
+
+    <div ng-show="userCtrl.showDetailsFlag" id="selectedUser" ng-class="{'notSaved': userCtrl.selectedUser.notSaved} ">
+        <div>
+            <li class="listHeading">
+                <div>Project ID</div>
+                <div>Date Started</div>
+                <div>Mentors</div>
+                <div>Manager</div>
+                <div>Status</div>
+            </li>
+            <li id={{key}} ng-repeat="(key, value) in userCtrl.selectedUserDetails()" ng-click="userCtrl.fnShowPlanDetails(key)">
+                <div>{{key}}</div>
+                <div>{{value.STARTDATE}}</div>
+                <div>{{value.MENTORS}}</div>
+                <div>{{value.MANAGER}}</div>
+                <input type="checkbox" name="projProgress" ng-checked="Number(value.PROJSTATUS)" ng-click="userCtrl.fnInvertProjectStatus(value)">
+                <label for="projProgress">{{userCtrl.projectStatus(value.PROJSTATUS)}}</label>
+            </li>
+        </div>
+        <button ng-click="userCtrl.fnAddItem()">Assign a Shadow/Training</button>
+    </div>
+
+    <div ng-show="userCtrl.editUserFlag" id="editedUser">
+        <li class="commonInfoRow">
+            <input ng-change="userCtrl.fnChangeSaveState()" type="text" ng-model="userCtrl.selectedUser.NAME">
+            <input ng-change="userCtrl.fnChangeSaveState()" type="text" ng-model="userCtrl.selectedUser.EXP">
+            <textarea ng-change="userCtrl.fnChangeSaveState()" rows="2" columns="5" ng-model="userCtrl.selectedUser.SKILLS"></textarea>
+        </li>
+        <button ng-click="userCtrl.fnUpdateUser()">Save</button>
+    </div>
+
+    <div id="selectedPlan">
+        <div>
+            <li class="commonInfoRow">
+                <input disabled type="text" ng-model="userCtrl.selectedPlan(userCtrl.selectedProjKey).INFO.TYPE">
+                <input disabled type="text" ng-model="userCtrl.selectedPlan(userCtrl.selectedProjKey).INFO.TITLE">
+                <textarea disabled rows="2" columns="5" ng-model="userCtrl.selectedPlan(userCtrl.selectedProjKey).INFO.DESC"></textarea>
+            </li>
+            <li ng-repeat="item in userCtrl.selectedPlan(userCtrl.selectedProjKey).ITEMS">
+                <label>Activity {{$index + 1}})</label>
+                <input disabled type="text" ng-model="item.TITLE">
+                <textarea disabled rows="2" columns="5" ng-model="item.DESC"></textarea>
+                <input type="checkbox" name="taskProgress" ng-checked="userCtrl.selectedProjDetails[userCtrl.selectedUserProjKey].PROGRESS[$index]" ng-click="userCtrl.fnInvertTaskStatus($index)">
+            </li>
+        </div>
+    </div>
+
+</div>

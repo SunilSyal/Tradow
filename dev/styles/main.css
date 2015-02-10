@@ -1,0 +1,103 @@
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+input, textarea, label{
+  margin:7px;
+}
+
+.mainMenu{
+  overflow: hidden;
+  margin-top: 10px; 
+}
+
+.mainMenu .menuItem{
+  list-style: none;
+  width:100px;
+  background: #ccc;
+  padding: 7px;
+  float: left;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #999;
+}
+
+.planList, .userList{
+  list-style: none;
+}
+
+.userList li, .planList li, .newUser.listHeading{
+  display: block;
+  overflow: hidden;
+  background: #F2F8FC;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #999;
+  color: #000;
+}
+
+.planList li:nth-child(even), .userList li:nth-child(even){
+  background: #DCEBF7;
+}
+.userList > li:hover, .planList > li:hover{
+  background: #5AA0DB;
+  color:#fff;
+}
+.newUser.listHeading, .planView .listHeading, .userView .listHeading, 
+.planView .listHeading:hover, .userView .listHeading:hover{
+  background: #1B63A1;
+  color: #fff;
+  font-weight: bold;
+}
+.userList li > div, .planList li > div, .newUser.listHeading > div{
+  float: left;
+  margin: 10px 1%;
+  width:18%;
+}
+.mainMenu .selectedMenuItem{
+  background: #999;
+  color: #fff;
+}
+.mainMenu .menuItem:hover{
+  background: #999;
+  color: #fff;
+}
+
+.planView #selectedPlan{
+  width: 98%;
+  padding:2% 1%;
+  background: #00ff00;
+  overflow: hidden;
+}
+
+.planView #selectedPlan li{
+  clear:both;
+  overflow: hidden;
+}
+
+.planView #selectedPlan .removeItem{
+  float: left;
+}
+
+.planView #selectedPlan label{
+  float: left;
+}
+
+.planView #selectedPlan input{
+  float: left;
+}
+
+.planView #selectedPlan textarea{
+  float: left;
+}
+
+.planView #selectedPlan.notSaved{
+  background: #ff0;
+}
+
+.planView #selectedPlan .commonInfoRow{
+  background: #999;
+}
+
+ 

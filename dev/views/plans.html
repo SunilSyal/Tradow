@@ -1,0 +1,37 @@
+<div class="planView">
+    <ul class="planList">
+    	<li class="listHeading">
+            <div>ID</div>
+            <div>TYPE</div>
+            <div>TITLE</div>
+            <div>DESC</div>
+        </li>
+        <li ng-attr-id="{{ 'plan_' + key }}" ng-class="{'notSaved': planCtrl.selectedPlan.notSaved} " ng-repeat="(key, value) in planCtrl.plans" ng-click="planCtrl.fnShowPlan(key, $event)">
+            <div>{{key}}</div>
+            <div>{{value.INFO.TYPE}}</div>
+            <div>{{value.INFO.TITLE}}</div>
+            <div>{{value.INFO.DESC}}</div>
+        </li>
+    </ul>
+	
+	
+    <div id="selectedPlan" ng-class="{'notSaved': planCtrl.selectedPlan.notSaved} ">
+        <div>
+            <li class="commonInfoRow">
+                <input ng-change="planCtrl.fnChangeSaveState()" type="text" ng-model="planCtrl.selectedPlan.INFO.TYPE">
+                <input ng-change="planCtrl.fnChangeSaveState()" type="text" ng-model="planCtrl.selectedPlan.INFO.TITLE">
+                <textarea ng-change="planCtrl.fnChangeSaveState()" rows="2" columns="5" ng-model="planCtrl.selectedPlan.INFO.DESC"></textarea>
+            </li>
+            <li ng-repeat="item in planCtrl.selectedPlan.ITEMS">
+            	<label>Activity {{$index + 1}})</label>
+                <input ng-change="planCtrl.fnChangeSaveState()" type="text" ng-model="item.TITLE">
+                <textarea ng-change="planCtrl.fnChangeSaveState()" rows="2" columns="5" ng-model="item.DESC"></textarea>
+                <div class="removeItem" ng-click="planCtrl.fnRemoveItem(item)">Remove</div>
+            </li>
+        </div>
+        <button ng-click="planCtrl.fnAddItem()">Add New Activity</button>
+        <button ng-click="planCtrl.fnSavePlan()">Save</button>
+    </div>
+
+    <button id="addPlan" ng-click="planCtrl.fnAddPlan()">Add Plan</button>
+</div>

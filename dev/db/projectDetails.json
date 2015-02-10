@@ -1,0 +1,22 @@
+{
+    "PROJECT_DETAILS": {
+        "INFO": {
+            "TITLE": "JS-UserProject",
+            "TYPE": "Shadow",
+            "DESC": "JS, HTML, CSS"
+        },
+        "ITEMS": [{
+            "TITLE": "1",
+            "DESC": "1"
+        }, {
+            "TITLE": "tile goes here",
+            "DESC": "desc goes here"
+        }, {
+            "TITLE": "tile goes here",
+            "DESC": "desc goes here"
+        }, {
+            "TITLE": "tile goes here",
+            "DESC": "desc goes here"
+        }]
+    }
+}
