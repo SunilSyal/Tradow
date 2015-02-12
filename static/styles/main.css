@@ -1,0 +1,72 @@
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+.main{
+  margin: 20px; 
+}
+.shadowMain{
+  max-width: 900px;
+  border: 1px solid #999;;
+}
+
+.shadowList{
+  margin-bottom: 0px;
+}
+.shadowList li{
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #999;
+  color: #000;
+}
+
+.shadowList .projItems:nth-child(even){
+  background: #DCEBF7;
+}
+.shadowList .projItems:nth-child(odd){
+  background: #F2F8FC;
+}
+
+.shadowList li > div{
+  float: left;
+  padding: 10px 1% 10px;
+}
+
+.shadowList .listDay{
+  width:7%;
+}
+.shadowList .listMentor{
+  width:13%;
+}
+.shadowList .listDesc{
+  width:35%;
+}
+.shadowList .listAssets{
+  width:35%;
+}
+
+.shadowList li div li {
+  margin-left: 15px;
+  margin-top: 5px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.shadowList li.projTitles{
+  background: #1B63A1;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fiftyFifty{
+  width: 45%;
+}
+ 

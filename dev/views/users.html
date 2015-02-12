@@ -1,13 +1,15 @@
 <div class="userView">
-
-
+    
+    <!--Search for a user -->
     <form name="searchUserForm" ng-submit="userCtrl.fnSearchUser()">
         <input ng-model="userCtrl.userSearchKey" placeholder="Search..." required>
         <button>Search User</button>
     </form>
 
+    
     <button ng-click="userCtrl.fnCreateUser()" class="addUser">Add User</button>
-
+    
+    <!--Add a new user -->
     <form name="newUserForm" class="newUser listHeading" ng-submit="userCtrl.fnSaveUser($event)">
         <input ng-model="userCtrl.newUserObj.ID" placeholder="ID" required>
         <input ng-model="userCtrl.newUserObj.NAME" placeholder="Name" required>
@@ -15,7 +17,8 @@
         <input ng-model="userCtrl.newUserObj.SKILLS" placeholder="Skills" required>
         <button>Save</button>
     </form>
-
+    
+    <!--Display the list of the searched users -->
     <ul class="userList">
         <li class="listHeading">
             <div>ID</div>
@@ -32,6 +35,7 @@
         </li>
     </ul>
 
+    <!--Display the list of all projects of the selected user -->
     <div ng-show="userCtrl.showDetailsFlag" id="selectedUser" ng-class="{'notSaved': userCtrl.selectedUser.notSaved} ">
         <div>
             <li class="listHeading">
@@ -52,7 +56,8 @@
         </div>
         
     </div>
-
+    
+    <!--Edit searched user -->
     <div ng-show="userCtrl.editUserFlag" id="editedUser">
         <li class="commonInfoRow">
             <input ng-change="userCtrl.fnChangeSaveState()" type="text" ng-model="userCtrl.selectedUser.NAME">
@@ -62,6 +67,7 @@
         <button ng-click="userCtrl.fnUpdateUser()">Save</button>
     </div>
 
+    <!--Display the details of the selected plan selected user -->
     <div id="selectedPlan">
         <div>
             <li class="commonInfoRow">

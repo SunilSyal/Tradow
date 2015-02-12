@@ -20,10 +20,10 @@
                 "DESC": "desc goes here"
             }]
         }, 
-        "SHADOW_104": {
+        "TRAINING_104": {
             "INFO": {
                 "TITLE": "JS-Advanced",
-                "TYPE": "Shadow",
+                "TYPE": "Training",
                 "DESC": "JS, HTML, CSS"
             },
             "ITEMS": [{

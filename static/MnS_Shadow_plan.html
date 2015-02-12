@@ -1,0 +1,59 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shadow Planner</title>
+
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="tradowApp">
+    <div class="main" ng-controller="AppCtrl as appCtrl">
+        <header>
+            <h3>MnS Shadow Planner</h3>
+        </header>
+        <h6>Manage: {{appCtrl.projDetails().MANAGER}}</h6>
+        <section class = "shadowMain">
+            <ul class="mentorMapping shadowList">
+                <li class="projTitles">
+                    <div class="fiftyFifty">Resource</div>
+                    <div class="fiftyFifty">Mentor</div>
+                </li>
+                <li class="projItems" ng-repeat="(key, value) in appCtrl.projDetails().RES_MEN">
+                    <div class="fiftyFifty">{{value[0]}}</div>
+                    <div class="fiftyFifty">{{value[1]}}</div>
+                </li>
+            </ul>
+            
+            <ul class="shadowList">
+                <li class="projTitles">
+                    <div class="listDay">Day</div>
+                    <div class="listMentor">PoC</div>
+                    <div class="listDesc">Description</div>
+                    <div class="listAssets">Assets</div>
+                </li>
+                <li class="projItems" ng-repeat="(key, value) in appCtrl.projDetails().INFO">
+                    <div class="listDay">{{value.DAY}}</div>
+                    <div class="listMentor">{{value.MENTORS}}</div>
+                    <div class="listDesc" ng-bind-html="value.DESC"></div>
+                    <div class="listAssets" ng-bind-html="value.ASSETS"></div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="scripts/vendors/jquery.js"></script>
+    <script src="scripts/vendors/jquery-ui-1.10.2.custom.js"></script>
+    <script src="scripts/vendors/angular.js"></script>
+    <script src="scripts/vendors/angular-route.js"></script>
+    <script src="scripts/vendors/angular-sanitize.js"></script>
+    <!-- build:js scripts/plugins.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/services.js"></script>
+</body>
+
+</html>
