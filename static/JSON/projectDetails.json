@@ -10,29 +10,29 @@
             "DAY": "1",
             "MENTORS": "Sunil",
             "DESC": "Introduction to MnS Project<li>What is MnS</li><li>Team Structure</li><li>Documentation Reference</li>Install XAMPP and SVN",
-            "ASSETS": "Important links: <li><a target='_blank' href='http://www.marksandspencer.com/'>Marks and Spencers</a></li><li><a target='_blank' href='http://delvmplmmcfp06.sapient.com:8080/JSPWiki/Wiki.jsp?page=main'>JSPWiki</a></li><li><a target='_blank' href='https://confluence.devops.mnscorp.net/login.action?os_destination=%2Fpages%2Fviewpage.action%3Ftitle%3DInstalling%2BSass%2Band%2BCompass%26spaceKey%3DSE'>Confluence</a></li><li><a target='_blank' href='https://www.apachefriends.org/index.html'>Download XAMPP</a></li><li><a target='_blank' href='http://tortoisesvn.net/downloads.html'>Download SVN</a></li>"
+            "ASSETS": "Important links: <li><a target='_blank' href='http://www.marksandspencer.com/'>Marks and Spencers</a></li><li><a target='_blank' href='http://delvmplmmcfp06.sapient.com:8080/JSPWiki/Wiki.jsp?page=main'>JSPWiki - Environment Wiki</a></li><li><a target='_blank' href='https://confluence.devops.mnscorp.net/login.action?os_destination=%2Fpages%2Fviewpage.action%3Ftitle%3DInstalling%2BSass%2Band%2BCompass%26spaceKey%3DSE'>Confluence - Document Repository</a></li><li><a target='_blank' href='https://confluence.devops.mnscorp.net/display/SE/Setup+of+Developer+Environment+on+Mac+and+Windows'>List of software required</a></li>"
         }, {
             "DAY": "2-3",
             "MENTORS": "Sunil / Monis",
             "DESC": "Introduction to front end framework:<li>Local setup</li><li>Pub/Sub</li><li>Modular Approach</li><li>Coding standards</li>",
-            "ASSETS": "Important links:<li><a target='_blank' href='http://localhost/Tradow/static/assets/Checklist_Reviewer.xlsx'>Checklist</a></li><li><a target='_blank' href='https://del.sapient.resultspace.com/scm/m_s_mcfp_source/trunk/development/ux/web'>Trunk Checkout Path</a></li> "
+            "ASSETS": "Important links:<li><a target='_blank' href ='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/development/_read_me_first.md'>Coding standards</a></li><li><a target='_blank' href='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/architecture/'>Arch documentation</a></li><li><a target='_blank' href='https://del.sapient.resultspace.com/scm/m_s_mcfp_source/trunk/development/ux/web'>Trunk Checkout Path</a></li><li><a target='_blank' href='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/development/setup_instructions.md'>Local Setup Instructions</a></li><li><a target='_blank' href='http://documentation.marksandspencers.mcfp/developer-docs/'>Developer Docs</a></li> "
         }, {
-            "DAY": "5-8",
+            "DAY": "4-6",
             "MENTORS": "Your Mentor",
             "DESC": "Exercise - Develop a sample page using existing styles and components",
-            "ASSETS": ""
+            "ASSETS": "Exercise:<li><a target='_blank' href='http://10.202.97.179/Tradow/static/Shadow-Exercise.pdf'>Download PDF</a></li>"
         }, {
-            "DAY": "9-10",
+            "DAY": "7-8",
             "MENTORS": "Your Mentor",
             "DESC": "Exercise review, feedback and fixes",
             "ASSETS": ""
         }, {
-            "DAY": "11",
+            "DAY": "9-10",
             "MENTORS": "Aman",
-            "DESC": "Demonstrate - How to identify a bug<br>Pre-req - iPad Debugging:<li>Fiddler</li><li>Fiddler certificate on iPad</li>",
+            "DESC": "Defect fixing<li>Debugging techniques</li><li>Fiddler</li><li>Fiddler certificate on iPad</li>",
             "ASSETS": "Important links: <li><a target='_blank' href='http://www.telerik.com/download/fiddler'>Download Fiddler</a></li><li><a target='_blank' href='http://docs.telerik.com/fiddler/configure-fiddler/tasks/ConfigureForiOS'>iPad-Fiddler certificate</a></li>"
         }, {
-            "DAY": "12-15",
+            "DAY": "11-15",
             "MENTORS": "Your mentor",
             "DESC": "Bug fixing",
             "ASSETS": ""
@@ -48,7 +48,7 @@
             "ASSETS": ""
         },{
             "DAY": "20",
-            "MENTORS": "Vandana",
+            "MENTORS": "Vandana and your mentor",
             "DESC": "Feedback",
             "ASSETS": ""
         }]
