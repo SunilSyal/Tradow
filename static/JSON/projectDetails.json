@@ -1,53 +1,54 @@
 {
     "SHADOW": {
         "MANAGER": "Vandana",
+        "STARTDATE": "Feb 12, 2015",
         "RES_MEN":[
         	["Mitesh Patni", "Monis"],
         	["Harshita Sinha", "Sunil"],
         	["Mohit Jain", "Aman"]
         ],
         "INFO": [{
-            "DAY": "1",
+            "DAYS": "1",
             "MENTORS": "Sunil",
             "DESC": "Introduction to MnS Project<li>What is MnS</li><li>Team Structure</li><li>Documentation Reference</li>Install XAMPP and SVN",
             "ASSETS": "Important links: <li><a target='_blank' href='http://www.marksandspencer.com/'>Marks and Spencers</a></li><li><a target='_blank' href='http://delvmplmmcfp06.sapient.com:8080/JSPWiki/Wiki.jsp?page=main'>JSPWiki - Environment Wiki</a></li><li><a target='_blank' href='https://confluence.devops.mnscorp.net/login.action?os_destination=%2Fpages%2Fviewpage.action%3Ftitle%3DInstalling%2BSass%2Band%2BCompass%26spaceKey%3DSE'>Confluence - Document Repository</a></li><li><a target='_blank' href='https://confluence.devops.mnscorp.net/display/SE/Setup+of+Developer+Environment+on+Mac+and+Windows'>List of software required</a></li>"
         }, {
-            "DAY": "2-3",
+            "DAYS": "2",
             "MENTORS": "Sunil / Monis",
             "DESC": "Introduction to front end framework:<li>Local setup</li><li>Pub/Sub</li><li>Modular Approach</li><li>Coding standards</li>",
             "ASSETS": "Important links:<li><a target='_blank' href ='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/development/_read_me_first.md'>Coding standards</a></li><li><a target='_blank' href='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/architecture/'>Arch documentation</a></li><li><a target='_blank' href='https://del.sapient.resultspace.com/scm/m_s_mcfp_source/trunk/development/ux/web'>Trunk Checkout Path</a></li><li><a target='_blank' href='https://lon.sapient.resultspace.com/scm/m_s_multichannel_programme/site-development/documentation/development/setup_instructions.md'>Local Setup Instructions</a></li><li><a target='_blank' href='http://documentation.marksandspencers.mcfp/developer-docs/'>Developer Docs</a></li> "
         }, {
-            "DAY": "4-6",
+            "DAYS": "4",
             "MENTORS": "Your Mentor",
             "DESC": "Exercise - Develop a sample page using existing styles and components",
             "ASSETS": "Exercise:<li><a target='_blank' href='http://10.202.97.179/Tradow/static/Shadow-Exercise.pdf'>Download PDF</a></li>"
         }, {
-            "DAY": "7-8",
+            "DAYS": "1",
             "MENTORS": "Your Mentor",
             "DESC": "Exercise review, feedback and fixes",
             "ASSETS": ""
         }, {
-            "DAY": "9-10",
+            "DAYS": "2",
             "MENTORS": "Aman",
             "DESC": "Defect fixing<li>Debugging techniques</li><li>Fiddler</li><li>Fiddler certificate on iPad</li>",
             "ASSETS": "Important links: <li><a target='_blank' href='http://www.telerik.com/download/fiddler'>Download Fiddler</a></li><li><a target='_blank' href='http://docs.telerik.com/fiddler/configure-fiddler/tasks/ConfigureForiOS'>iPad-Fiddler certificate</a></li>"
         }, {
-            "DAY": "11-15",
+            "DAYS": "5",
             "MENTORS": "Your mentor",
             "DESC": "Bug fixing",
             "ASSETS": ""
         },  {
-            "DAY": "16-17",
+            "DAYS": "2",
             "MENTORS": "Aman / Monis",
             "DESC": "Performance tuning concepts and Exercise<br>Tools:<li>Sitespeed</li><li>YSlow</li>",
             "ASSETS": ""
         }, {
-            "DAY": "18-19",
+            "DAYS": "2",
             "MENTORS": "Vandana and Your mentor",
             "DESC": "Presentation",
             "ASSETS": ""
         },{
-            "DAY": "20",
+            "DAYS": "1",
             "MENTORS": "Vandana and your mentor",
             "DESC": "Feedback",
             "ASSETS": ""

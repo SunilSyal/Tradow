@@ -41,16 +41,16 @@ ul{
 }
 
 .shadowList .listDay{
-  width:7%;
+  width:18%;
 }
 .shadowList .listMentor{
   width:13%;
 }
 .shadowList .listDesc{
-  width:35%;
+  width:30%;
 }
 .shadowList .listAssets{
-  width:35%;
+  width:30%;
 }
 
 .shadowList li div li {

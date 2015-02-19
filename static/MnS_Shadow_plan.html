@@ -15,7 +15,8 @@
         <header>
             <h3>MnS Shadow Planner</h3>
         </header>
-        <h6>Manage: {{appCtrl.projDetails().MANAGER}}</h6>
+        <h6>Manager: {{appCtrl.projDetails().MANAGER}}</h6>
+        <h6>Start Date: {{appCtrl.projDetails().STARTDATE}}</h6>
         <section class = "shadowMain">
             <ul class="mentorMapping shadowList">
                 <li class="projTitles">
@@ -30,13 +31,13 @@
             
             <ul class="shadowList">
                 <li class="projTitles">
-                    <div class="listDay">Day</div>
+                    <div class="listDay">End Date</div>
                     <div class="listMentor">PoC</div>
                     <div class="listDesc">Description</div>
                     <div class="listAssets">Assets</div>
                 </li>
                 <li class="projItems" ng-repeat="(key, value) in appCtrl.projDetails().INFO">
-                    <div class="listDay">{{value.DAY}}</div>
+                    <div class="listDay">{{value.ENDDATE}} <br>{{value.DAYS}} days</div>
                     <div class="listMentor">{{value.MENTORS}}</div>
                     <div class="listDesc" ng-bind-html="value.DESC"></div>
                     <div class="listAssets" ng-bind-html="value.ASSETS"></div>
